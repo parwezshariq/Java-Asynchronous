@@ -10,19 +10,25 @@ public class SimpleCompletableFuture {
     }
 
     private static void asyncOperationOne() {
+        // Build completable future using constructor
         CompletableFuture<Void> cf = new CompletableFuture<>();
 
+        // Create runnable task, with use of complete method
         Runnable task = () -> {
             try {
-                Thread.sleep(500);
+                Thread.sleep(1);
             } catch (InterruptedException e){
             }
             cf.complete(null);
         };
 
+        // Trigger the task
         CompletableFuture.runAsync(task);
 
+        // Complete the task
         Void nil = cf.join();
+
+        // Print some output
         System.out.println("We are done");
     }
 }
