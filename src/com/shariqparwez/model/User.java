@@ -1,4 +1,4 @@
-package com.shariqparwez.asyncchain.model;
+package com.shariqparwez.model;
 
 public class User {
     private long id;

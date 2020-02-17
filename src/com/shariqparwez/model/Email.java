@@ -1,4 +1,4 @@
-package com.shariqparwez.asyncchain.model;
+package com.shariqparwez.model;
 
 public class Email {
     private long id;

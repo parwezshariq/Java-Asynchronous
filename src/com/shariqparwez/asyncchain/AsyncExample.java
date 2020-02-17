@@ -1,6 +1,6 @@
 package com.shariqparwez.asyncchain;
 
-import com.shariqparwez.asyncchain.model.User;
+import com.shariqparwez.model.User;
 
 import java.util.Arrays;
 import java.util.List;
